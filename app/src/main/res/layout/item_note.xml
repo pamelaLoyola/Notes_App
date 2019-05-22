@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:hint="My title note"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="dd/mm/yyyy"
+            android:layout_alignRight="@id/title_text"/>
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Esta es una prueba de este laboratorio calificado acerca de las notas que se haran"
+            android:textSize="20dp"
+            android:layout_below="@+id/title_text"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_star"
+            android:text="Favorito"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@id/content_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    
+
+</android.support.v7.widget.CardView>
